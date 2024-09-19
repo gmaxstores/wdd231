@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {margin: 0;padding: 0;box-sizing: border-box;font-family: Roboto, sans-serif, Arial, Helvetica;}
+h1 {
+    color: white;
+}
+.header {display: flex;justify-content: space-evenly;background-color: blue;align-items: center;padding: 10px;}
+nav {
+    display: flex;justify-content: space-around;padding: 20px;background-color: black;
+}
+nav a:hover {text-decoration: underline black;background-color: white;color: black;}
+a {
+    text-decoration: none;padding: 1rem;color: white;
+}
+h2 {
+    background-color: blue;color: white;padding: 1rem;text-align: center;border-top-left-radius: 1rem;border-top-right-radius: 1rem;
+}
+.home {display: grid;grid-template-columns: 1fr 1fr;padding: 1rem 1rem 0 1rem;}
+section {border-radius: 1rem;border: 1px solid blue;margin: 1rem;box-shadow: 3px 3px 5px 3px lightblue;}
+.cert {
+    grid-column: 1/3;
+}
+figure {padding: 1rem 0 1rem 0;}
+figure img {display: block; margin: 0 auto;}
+figcaption {text-align: center;padding: 1rem 0rem 0rem 1rem;font-weight: bold;}
+footer {background-color: blue;color: white; text-align: center;}
+footer p {font-size: 1.5em;padding-bottom: 0;margin-bottom: 0;}
+.last {color: yellow;font-size: 0.8em;font-family: Oswald, Arial, Helvetica, sans-serif;}
+#lastModified {margin: 0;padding-bottom: 1.5%;}
+li {padding: 1rem;}
+.certmenu nav {
+    width: 100%;max-width: 30%;margin: 0 auto;background-color: white;
+}
+.certmenu nav a {
+    border: 1px solid blue;color: black;border-radius: 1rem;
+}
+.certmenu nav a:hover {
+    background-color: blue;color: white;
+}
+.container {
+    display: grid;grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));width: 100%;max-width: 50%;margin: 0 auto;
+}
+h3 {
+    text-align: center;padding: 1rem;
+}
+hr {
+    margin: 0 2rem 0 2rem;color: blue;border: 2px solid;border-radius: 1rem;box-shadow: 3px 3px 5px 3px lightblue;
+}
+.containerTwo {text-align: center;font-size: 1rem;font-weight: bold;}
+.active {background-color: yellow;}
+
+
+
+@media screen and (max-width: 700px) {
+    header nav, footer {flex-direction: column;}
+    #menu {font-size: 1.5rem;border: 0;background: none;color: white;position: absolute;top: 1rem;right: 1rem;}
+    #menu:hover {border: 3px solid black;margin-top: 4px;}
+    #menu::before {content: "☰";}
+    #menu.show::before {content: "X";}
+    nav a {display: none;}
+    nav {padding: 0;}
+    .show a {display: block;}
+    div h1 {
+        padding-left: 10px;
+    }
+    .certmenu nav {
+        width: 100%;max-width: 50%;margin: 0 auto;background-color: white;padding-bottom: 1rem;
+    }
+    .certmenu nav a {
+        border: 1px solid blue;color: black;border-radius: 1rem;display: flex;flex-direction: row;
+    }
+    .certmenu nav a:hover {
+        background-color: blue;color: white;
+    }
+    .home {display: block;}
+}
