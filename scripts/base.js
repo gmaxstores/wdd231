@@ -121,11 +121,19 @@ function createCourseCards(filteredCourses) {
         let card = document.createElement("section");
         let msg = document.createElement("h3");
 
-        msg.textContent = course.subject;
+        msg.textContent = `${course.subject} ${course.number}`;
         if (course.completed == true) {
-            msg.style.backgroundColor = "orange";
-            msg.style.border = "2px solid orange";
+            msg.style.backgroundColor = "green";
+            msg.style.border = "2px solid white";
             msg.style.borderRadius = "1rem";
+            msg.classList.add("indi");
+            msg.style.color = "white";
+        }
+        else {
+            msg.style.backgroundColor = "white";
+            msg.style.border = "2px solid white";
+            msg.style.borderRadius = "1rem";
+            msg.classList.add("indiTwo");
         }
 
         card.appendChild(msg);
