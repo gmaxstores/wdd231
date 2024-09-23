@@ -1,0 +1,60 @@
+{
+    "companies" : [
+        {
+            "name" : "Abelink Plc",
+            "addresses" : "Auchi, Edo",
+            "phoneNumbers" : "08110793914",
+            "websiteURLS" : "www.abelinko.com",
+            "image" : "abelinko",
+            "membershipLevel" : 1
+        },
+        {
+            "name" : "Gloria Inc",
+            "addresses" : "Calabar, Cross River",
+            "phoneNumbers" : "09163368357",
+            "websiteURLS" : "www.gloriainc.com",
+            "image" : "gloria",
+            "membershipLevel" : 2
+        },
+        {
+            "name" : "Gmax Stores",
+            "addresses" : "Asaba Delta",
+            "phoneNumbers" : "08157893884",
+            "websiteURLS" : "www.gmaxstores.com",
+            "image" : "gmax",
+            "membershipLevel" : 3
+        },
+        {
+            "name" : "NanaCakes Confectionary",
+            "addresses" : "Nnewi, Anambra",
+            "phoneNumbers" : "08125469874",
+            "websiteURLS" : "www.nanacakesconfectionary.com",
+            "image" : "nanacakes",
+            "membershipLevel" : 1
+        },
+        {
+            "name" : "Life Beauty Salon",
+            "addresses" : "Gboko, Benue",
+            "phoneNumbers" : "08124579635",
+            "websiteURLS" : "www.lifebeautysalon.com",
+            "image" : "life",
+            "membershipLevel" : 2
+        },
+        {
+            "name" : "Obi shoes Ent",
+            "addresses" : "Awka, Anambra",
+            "phoneNumbers" : "08123654978",
+            "websiteURLS" : "www.obishoes.com",
+            "image" : "obi",
+            "membershipLevel" : 1
+        },
+        {
+            "name" : "Cythia Makeup Studio",
+            "addresses" : "Enugu, Enugu",
+            "phoneNumbers" : "08124596336",
+            "websiteURLS" : "www.cynthiamakeupstudio.com",
+            "image" : "cynthia",
+            "membershipLevel" : 3
+        }
+    ]
+}
