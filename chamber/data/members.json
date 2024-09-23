@@ -5,7 +5,7 @@
             "addresses" : "Auchi, Edo",
             "phoneNumbers" : "08110793914",
             "websiteURLS" : "www.abelinko.com",
-            "image" : "abelinko",
+            "image" : "abelinko.webp",
             "membershipLevel" : 1
         },
         {
@@ -13,7 +13,7 @@
             "addresses" : "Calabar, Cross River",
             "phoneNumbers" : "09163368357",
             "websiteURLS" : "www.gloriainc.com",
-            "image" : "gloria",
+            "image" : "gloria.webp",
             "membershipLevel" : 2
         },
         {
@@ -21,7 +21,7 @@
             "addresses" : "Asaba Delta",
             "phoneNumbers" : "08157893884",
             "websiteURLS" : "www.gmaxstores.com",
-            "image" : "gmax",
+            "image" : "gmax.webp",
             "membershipLevel" : 3
         },
         {
@@ -29,7 +29,7 @@
             "addresses" : "Nnewi, Anambra",
             "phoneNumbers" : "08125469874",
             "websiteURLS" : "www.nanacakesconfectionary.com",
-            "image" : "nanacakes",
+            "image" : "nanacakes.webp",
             "membershipLevel" : 1
         },
         {
@@ -37,7 +37,7 @@
             "addresses" : "Gboko, Benue",
             "phoneNumbers" : "08124579635",
             "websiteURLS" : "www.lifebeautysalon.com",
-            "image" : "life",
+            "image" : "life.webp",
             "membershipLevel" : 2
         },
         {
@@ -45,7 +45,7 @@
             "addresses" : "Awka, Anambra",
             "phoneNumbers" : "08123654978",
             "websiteURLS" : "www.obishoes.com",
-            "image" : "obi",
+            "image" : "obi.webp",
             "membershipLevel" : 1
         },
         {
@@ -53,7 +53,7 @@
             "addresses" : "Enugu, Enugu",
             "phoneNumbers" : "08124596336",
             "websiteURLS" : "www.cynthiamakeupstudio.com",
-            "image" : "cynthia",
+            "image" : "cynthia.webp",
             "membershipLevel" : 3
         }
     ]
