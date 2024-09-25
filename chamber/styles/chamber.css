@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.header-img {
+    display: flex;align-items: center;gap: 5px;margin-left: 1rem;
+}
+body {
+    font-family: Roboto, sans-serif, Arial, Helvetica;
+}
+header {
+    background-color: rgb(0, 4, 255);display: grid;grid-template-columns: 1fr 1fr auto auto;align-items: center;color: white;
+}
+.header-img p {
+    font-size: 1rem;
+}
+.header-img p span {
+    font-size: smaller;
+}
+
+header a {
+    text-decoration: none;font-size: larger;color: white;padding: 1.5rem;
+}
+nav {display: flex;justify-content: space-between;}
+nav a {
+    width: 100%;text-align: center;
+}
+.dm {
+    margin-left: 1rem;margin-right: 1rem;
+}
+header a:hover {
+    background-color: black;color: white;padding: 1.5rem;
+}
+main {
+    max-width: 900px;margin: 0 auto;
+}
+.card {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
+footer {
+    display: grid;grid-template-columns: 1fr 1fr 1fr;align-items: center;background-color: rgb(0, 4, 255);color: white;justify-items: center;
+}
+section {
+    padding: 1rem;align-self: center;justify-self: center;text-align: center;
+}
+section p {
+    text-align: center;
+}
+#menu {
+    display: none;
+}
+.bt {display: flex;justify-content: center;}
+main button {padding: 1rem;margin: 1rem;}
+button:hover {
+    background-color: black;color: white;
+}
+.listt section {
+    display: flex;align-items: center;justify-content: space-between;
+}
+
+.gridd {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
+.gridd section {
+    padding: 1rem;align-self: center;justify-self: center;display: block;text-align: center;
+}
+.gridd section img {
+    display: block;margin: 0 auto;
+}
+.listt section:nth-child(even) {
+    background-color: lightskyblue;
+}
+#currentyear {
+    font-weight: bolder;
+}
+.last {
+    font-weight: bolder;
+}
+.dark-mode {
+    background-color: black;color: white;
+}
+.dark-mode main a {
+    color: white;
+}
+.dark-mode .listt section:nth-child(even) {
+    background-color: gray;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        display: block;
+    }
+    #menu {display: block; font-size: 1.5rem;border: 0;background: none;color: white;position: absolute;top: 1rem;right: 1rem;}
+    #menu:hover {border: 1px solid white;}
+    #menu::before {content: "☰";}
+    #menu.show::before {content: "X";}
+    header a {display: none;}
+    .show a {display: block;padding: 1rem;}
+    nav {
+        flex-direction: column;
+    }
+    .dm {
+        position: absolute;right: 3.5rem;top: 1.1rem;
+    }
+    .listt section {
+        flex-direction: column;
+    }
+    footer {
+        display: block;text-align: center;padding: 1rem;
+    }
+}
