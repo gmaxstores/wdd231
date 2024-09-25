@@ -99,6 +99,6 @@ button:hover {
         flex-direction: column;
     }
     footer {
-        display: block;text-align: center;padding: 1rem;
+        display: block;text-align: center;
     }
 }
