@@ -1,5 +1,5 @@
 const currentyear = document.querySelector("#currentyear");
-const last = document.getElementById("lastModified");
+const last = document.querySelector("#lastModified");
 const url = "https://gmaxstores.github.io/wdd231/chamber/data/members.json";
 const cards = document.querySelector(".card");
 const gridBt = document.querySelector(".grid");
@@ -13,8 +13,8 @@ function toggleDarkMode() {
   }
 
 const today = new Date();
-last.innerHTML = `<span class="last">Last Modification: ${document.lastModified}</span>`;
-currentyear.innerHTML = today.getFullYear();
+last.textContent = `Last Modification: ${document.lastModified}`;
+currentyear.textContent = today.getFullYear();
 
 hamButton.addEventListener("click", () => {
     nav.classList.toggle("show");
