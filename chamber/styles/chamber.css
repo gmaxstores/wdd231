@@ -73,7 +73,7 @@ button:hover {
     #menu::before {content: "☰";}
     #menu.show::before {content: "X";}
     header a {display: none;}
-    .show a {display: block;padding: 0.5rem;}
+    .show a {display: block;padding: 1.5rem;}
     nav {
         flex-direction: column;
     }
