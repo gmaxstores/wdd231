@@ -52,6 +52,9 @@ button:hover {
 .listt section:nth-child(even) {
     background-color: lightskyblue;
 }
+h1 {
+    text-align: center;
+}
 
 .dark-mode {
     background-color: black;color: white;
@@ -84,6 +87,9 @@ button:hover {
         flex-direction: column;
     }
     footer {
-        flex-direction: column; text-align: center;
+        display: block;
+    }
+    footer a, footer p {
+        padding: 1rem;
     }
 }
