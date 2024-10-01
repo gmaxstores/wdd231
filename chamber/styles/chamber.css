@@ -67,7 +67,70 @@ h1 {
 }
 
 
-@media screen and (max-width: 900px) {
+/*Homepage css*/
+.hh {
+    text-align: left;
+}
+.hgrid {
+    display: grid;grid-template-columns: 2fr 1fr 1fr;gap: 10px;padding: 1rem;
+}
+.hgrid section {justify-self: left;background-color: lightblue;padding: 0;align-self: normal;width: 100%;text-align: left;}
+.hgrid section div {
+    background-color: black;color: white;padding: 0.5rem;
+}
+.msectionn {
+    background-color: lightblue;width: 90%;
+}
+.subdiv {
+    display: flex;gap: 10px;justify-content: space-around;
+}
+.section-heading-two {
+    line-height: 0;text-align: left;
+}
+.section-heading-th {
+    align-self: center;
+}
+.cmlevel {
+    font-weight: bold;
+}
+.subdiv span {
+    font-weight: bold;
+}
+.caddress {
+    width: 100%;
+}
+.cwebsite {
+    color: darkblue;
+}
+.bmembers {
+    display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));gap: 1rem;padding: 1rem;
+}
+.w-section{
+    display: grid;grid-template-columns: 1fr 1fr;align-items: center;justify-items: center;padding: 0 0 0 1rem;
+}
+.forecast span {
+    font-weight: bold;
+}
+.forecast {
+    text-align: center;
+}
+.grid-section p {
+    padding: 1rem;
+}
+.hero {
+    width: 100%;height: auto;
+}
+.cto {
+    position: relative;top: -4rem;background-color: blue;left: 1rem;padding: 1rem;text-decoration: none;color: white;
+}
+.cto:hover {
+    background-color: black;color: white;
+}
+.dark-mode .hgrid div {
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 700px) {
     header {
         display: block;
     }
@@ -91,5 +154,14 @@ h1 {
     }
     footer a, footer p {
         padding: 1rem;
+    }
+    .hgrid {
+        display: block;
+    }
+    .hgrid section {
+        margin: 1rem;width: unset;align-content: center;
+    }
+    .cto {
+        padding: 0.5rem;top: -2.5rem;
     }
 }

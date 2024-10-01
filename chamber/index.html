@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce</title>
+    <meta name="description" content="This page serves as the landing page to the chamber of commerce website and displays current events, current weather, weather forecast and some random members. ">
+    <meta name="author" content="Maxwell Balla Nvani">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Timbuktu Chamber of commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Homepage">
+    <meta property="og:image" content="https://www.plannthat.com/wp-content/uploads/2019/01/instagram-business-planning.jpeg">
+    <meta property="og:url" content="https://gmaxstores.github.io/wdd231/chamber/index.html">
+    <meta property="twitter:card" content="Homepage">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/chamber.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-img">
+            <img src="images/businesslogo.webp" alt="Logo of the Chamber of Commerce website" width="64" height="50">
+            <p>
+                Timbuktu <br> <span>Chamber of Commerce</span>
+            </p>
+        </div>
+        <button id="menu" aria-label="menu button"></button>
+        <nav>
+            <a href="directory.html">Home</a>
+            <a href="">Directory</a>
+            <a href="">Join</a>
+            <a href="">Discover</a>
+        </nav>
+        <button class="dm" onclick="toggleDarkMode()">◐</button>
+    </header>
+    <main>
+        <div class="hero-image">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/homepage-hero-img-large.webp">
+                <source media="(min-width: 500px)" srcset="images/homepage-hero-img-medium.webp">
+                <img class="hero" src="images/homepage-hero-img-small.webp" alt="hero-image of the homepage of Timbuktu chamber of commerce" width="400" height="200">
+            </picture>
+            <a class="cto" href="">JOIN NOW</a>
+        </div>
+        <h1 class="hh">Home</h1>
+        <div class="hgrid">
+            <section class="grid-section">
+                <div>Events</div>
+                <p>
+                    I am from the united states of america
+                </p>
+                <p>I am from the united states of america</p>
+            </section>
+            <section class="grid-section-w">
+                <div>Current Weather</div>
+                <aside class="w-section">
+                    <aside class="weather-details"></aside>
+                </aside>
+            </section>
+            <section class="grid-section-f">
+                <div>Weather Forecast</div>
+                <aside class="forecast"></aside>
+            </section>
+        </div>
+        <div class="bmembers">
+
+        </div>
+    </main>
+    <footer>
+        <p>
+            Timbuktu Chamber of Commerce - 10 Rue De La Pak <br>
+            Timbuktu, Mali 999 - 0223 555-2300
+        </p>
+        <a href=""><img src="images/youtubeicon.webp" alt="YouTube icon" width="32" height="32"></a>
+        <a href=""><img src="images/facebookicon.webp" alt="facebook icon" width="32" height="32"></a>
+        <a href=""><img src="images/linkedinicon.webp" alt="LinkedIn icon" width="32" height="32"></a>
+        <p>
+            WDD231 Class Project - Maxwell Nvani - 
+            &copy;<span id="currentyear"></span> Timbuktu Chamber of Commerce <br>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
