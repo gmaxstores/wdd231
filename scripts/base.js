@@ -2,7 +2,7 @@ const currentyear = document.querySelector("#currentyear");
 const last = document.getElementById("lastModified");
 const hamButton = document.querySelector("#menu");
 const nav = document.querySelector("nav");
-const wayfinder = nav.getElementsByClassName("a");
+const wayfinder = nav.querySelectorAll("a");
 const container = document.querySelector(".container");
 const containerTwo = document.querySelector(".containerTwo");
 const all = document.querySelector(".all");
@@ -101,7 +101,7 @@ hamButton.addEventListener("click", () => {
 
 createWayFinder(wayfinder);
 
-function createWayFinder(wayF) {
+/*function createWayFinder(wayF) {
     for (let i = 0; i < wayF.length; i++) {
         wayF[i].addEventListener("click", function() {
             let current = document.getElementsByClassName("active");
@@ -111,6 +111,13 @@ function createWayFinder(wayF) {
             this.className += " active";
         });
     }
+}*/
+function createWayFinder(wayF) {
+    wayF.forEach((way) => {
+        way.addEventListener("click", () => {
+            way.classList.add("active");
+        })
+    })
 }
 
 createCourseCards(courses);

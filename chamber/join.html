@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <meta name="description" content="This page serves to provide a form for potential members to fill in order to join the Timbuktu chmaber of commerce">
+    <meta name="author" content="Maxwell Balla Nvani">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Membership Form">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Join Us">
+    <meta property="og:image" content="https://www.plannthat.com/wp-content/uploads/2019/01/instagram-business-planning.jpeg">
+    <meta property="og:url" content="https://gmaxstores.github.io/wdd231/chamber/join.html">
+    <meta property="twitter:card" content="Join Us">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/join.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-img">
+            <img src="images/businesslogo.webp" alt="Logo of the Chamber of Commerce website" width="64" height="50">
+            <p>
+                Timbuktu <br> <span>Chamber of Commerce</span>
+            </p>
+        </div>
+        <button id="menu" aria-label="menu button"></button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="">Discover</a>
+        </nav>
+        <button class="dm" onclick="toggleDarkMode()">◐</button>
+    </header>
+    <main>
+        <h1>Join Us Today</h1>
+        <div class="container-j">
+            <section class="form-section">
+                <form action="thankyou.html" method="get" class="form-container">
+                    <h2>Membership Form</h2>
+                    <fieldset>
+                        <legend>Biodata</legend>
+                        <p>Required fields are marked with an asterics (<span aria-label="required">*</span>)</p>
+                        <p>
+                            <label for="firstname"><span aria-label="required">*</span> First Name:
+                                <input type="text" id="firstname" name="firstname" title="Your First Name" autocomplete="given-name" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="lastname"><span aria-label="required">*</span> Last Name:
+                                <input type="text" id="lastname" name="lastname" title="Your Last Name" autocomplete="family-name" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="email"><span aria-label="required">*</span> Email Address:
+                                <input type="email" name="email" id="email" title="Your Email address e.g johndoe@xyc.com" autocomplete="email" placeholder="johndoe@xyz.com" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="telephone"><span aria-label="required">*</span> Mobile Phone Number:
+                                <input type="tel" name="telephone" id="telephone" title="Your Phone number" autocomplete="tel" required>
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Info</legend>
+                        <p>
+                            <label for="orgtitle"> Organizational Title:
+                                <input type="text" id="orgtitle" name="orgtitle" title="Minimum of 7 characters inluding only alpha characters, hyphens and spaces" autocomplete="organization-title" pattern="[a-zA-Z\s\-]*" minlength="7">
+                            </label>
+                        </p>
+                        <p>
+                            <label for="orgname"><span aria-label="required">*</span> Business/Organization Name:
+                                <input type="text" id="orgname" name="orgname" title="Name of Business/Organization" autocomplete="organization" required>
+                            </label>
+                        </p>
+                        <ul>
+                            <span aria-label="Membership Level">Membership Level:</span>
+                            <li>
+                                <label for="level-one" class="level-one">
+                                    <input type="radio" name="level" id="level-one" value="1">
+                                    NP Membership
+                                </label>
+                            </li>
+                            <li>
+                                <label for="level-two" class="level-two">
+                                    <input type="radio" name="level" id="level-two" value="2">
+                                    Bronze Membership
+                                </label>
+                            </li>
+                            <li>
+                                <label for="level-three" class="level-three">
+                                    <input type="radio" name="level" id="level-three" value="3">
+                                    Silver Membership
+                                </label>
+                            </li>
+                            <li>
+                                <label for="level-four" class="level-four">
+                                    <input type="radio" name="level" id="level-four" value="4">
+                                    Gold Membership
+                                </label>
+                            </li>
+                        </ul>
+                        <p>
+                            <label for="business-description">Business/Organization Description:
+                                <textarea name="description" id="business-description" title="Description of yout business/organization"></textarea>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="timestamp">
+                                <input type="hidden" name="timestamp" id="timestamp" value="1">
+                            </label>
+                        </p>
+                    </fieldset>
+                    <label class="submitbtn" for="submit-btn">
+                        <input type="submit" value="Submit" id="submit-btn">
+                    </label>
+                </form>
+            </section>
+            <section class="levels-section">
+                Membership Levels
+                <aside>
+                    Non Profit Membership Level <br>
+                    <button class="npbtn">Learn More</button>
+                    <dialog class="nplevel">
+                        <button class="np-closebtn">X</button>
+                        <p>The non profit membership level is the least level a member can subscribe to. <br>Subscription fee is $100. <br>Members of this level would be entitled to special events</p>
+                    </dialog>
+                </aside>
+                <aside>
+                    Bronze Membership Level <br>
+                    <button class="bronzebtn">Learn More</button>
+                    <dialog class="bronzelevel">
+                        <button class="bronze-closebtn">X</button>
+                        <p>The Bronze membership level is the second level a member can subscribe to. <br>Subscription fee is $200. <br>Members of this level would be entitled to special events and opportunity to advertise on our home page.</p>
+                    </dialog>
+                </aside>
+                <aside>
+                    Silver Membership Level <br>
+                    <button class="silverbtn">Learn More</button>
+                    <dialog class="silverlevel">
+                        <button class="silver-closebtn">X</button>
+                        <p>The Silver membership level is the third level a member can subscribe to. <br>Subscription fee is $300. <br>Members of this level would be entitled to special events and opportunity to advertise on our home page. In addition, members would also have the opportunity to undergo special training.</p>
+                    </dialog>
+                </aside>
+                <aside>
+                    Gold Membership Level <br>
+                    <button class="goldbtn">Learn More</button>
+                    <dialog class="goldlevel">
+                        <button class="closebtn">X</button>
+                        <p>The Gold membership level is the highest level a member can subscribe to. <br>Subscription fee is $400. <br>Members of this level would be entitled to special events and opportunity to advertise on our home page. In addition, members would also have the opportunity to undergo special training as well as have access to special event discounts</p>
+                    </dialog>
+                </aside>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Timbuktu Chamber of Commerce - 10 Rue De La Pak <br>
+            Timbuktu, Mali 999 - 0223 555-2300
+        </p>
+        <a href=""><img src="images/youtubeicon.webp" alt="YouTube icon" width="32" height="32"></a>
+        <a href=""><img src="images/facebookicon.webp" alt="facebook icon" width="32" height="32"></a>
+        <a href=""><img src="images/linkedinicon.webp" alt="LinkedIn icon" width="32" height="32"></a>
+        <p>
+            WDD231 Class Project - Maxwell Nvani - 
+            &copy;<span id="currentyear"></span> Timbuktu Chamber of Commerce <br>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>

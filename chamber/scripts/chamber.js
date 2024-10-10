@@ -13,14 +13,16 @@ const weatherSection = document.querySelector(".w-section");
 const fUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=6.20&lon=6.69&appid=71a9bbafef73b11db23d820d171a062a&units=metric';
 const wUrl = "https://api.openweathermap.org/data/2.5/weather?lat=6.20&lon=6.69&appid=71a9bbafef73b11db23d820d171a062a&units=metric";
 
-
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
-  }
+}
+
 
 const today = new Date();
 last.textContent = `Last Modification: ${document.lastModified}`;
 currentyear.textContent = today.getFullYear();
+
+
 
 hamButton.addEventListener("click", () => {
     nav.classList.toggle("show");
@@ -125,17 +127,23 @@ function displayData(wData) {
 }
 
 async function getBusinessData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    createBusinessCards(data.companies);
-
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        createBusinessCards(data.companies);
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 async function getMemberData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    createMemberData(data.companies);
-
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        createMemberData(data.companies);
+    } catch (error) {
+        console.log(error);
+    }
 }
 getMemberData();
 
