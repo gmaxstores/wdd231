@@ -1,0 +1,76 @@
+{
+    "courses" : [
+        {
+            "subject": "MTH",
+            "number": 101,
+            "title": "Mathematics",
+            "credits": 3,
+            "type" : "Compulsory",
+            "description": "This course will introduce students to indices, logarithm and trigonometry"
+        },
+        {
+            "subject": "MTH",
+            "number": 102,
+            "title": "Mathematics",
+            "credits": 3,
+            "type" : "Compulsory",
+            "description": "This course will introduce students to functions, matrix, calculus and complex numbers"
+        },
+        {
+            "subject": "MTH",
+            "number": 103,
+            "title": "Mathematics",
+            "credits": 3,
+            "type" : "Compulsory",
+            "description": "This course will introduce students to algebra and trigonometry"
+        },
+        {
+            "subject": "ENG",
+            "number": 201,
+            "title": "English Language",
+            "credits": 3,
+            "type" : "Compulsory",
+            "description": "This course introduces students to essay writing, grammar, lexis and pronunciation."
+        },
+        {
+            "subject": "PHY",
+            "number": 401,
+            "title": "Physics",
+            "credits": 3,
+            "type" : "Science",
+            "description": "This course introduces students to the laws of nature and its application"
+        },
+        {
+            "subject": "HIS",
+            "number": 301,
+            "title": "History",
+            "credits": 2,
+            "type" : "Art",
+            "description": "This course will focus on local and international history"
+        },
+        {
+            "subject": "CMM",
+            "number": 501,
+            "title": "Commerce",
+            "credits": 3,
+            "type" : "Art",
+            "description": "This course exposes students to the financial system and its principles"
+        },
+        {
+            "subject": "CHM",
+            "number": 601,
+            "title": "Chemistry",
+            "credits": 3,
+            "type" : "Science",
+            "description": "This course introduces students to properties and effects of elements and their manipulation."
+        },
+        {
+            "subject": "AGS",
+            "number": 701,
+            "title": "Agricultural Science",
+            "credits": 2,
+            "type" : "Compulsory",
+            "description": "This course exposes students to the world of farming including livestock, crop farming, mechanization as well as guding principles"
+        }
+    ]
+}
