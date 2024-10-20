@@ -1,0 +1,386 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display&family=Sometype+Mono&display=swap);
+.content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+:root {
+  --main-bg-color: #BB9F06;
+  --data-font-size: 1rem;
+  --main-text-color: black;
+  --hover-bg-color: #0E1428;
+  --hover-color: white;
+  --comment-color: #FD151B;
+}
+body {font-family: "playfair display", serif, verdana, sans-serif;}
+p {font-family: "sometype mono", monospace, Helvetica, sans-serif;}
+#menu {display: none;}
+.side {display: grid;grid-template-columns: 1fr 1fr;}
+.side-img {padding: 1rem;align-self: center;}
+.sidee-img {display: block;width: 100%;height: auto;}
+.non-social a, .non-social p {margin-right: 1rem;text-align: center;align-self:  center;}
+.logo {margin: 0 auto;display: block;width: 200PX;height: auto;}
+header {background-color: var(--main-bg-color);display: flex;}
+nav {display: flex;justify-content: right;width: 100%;font-size: 2rem;align-self: center;}
+
+nav a {
+    text-align: center;text-decoration: none;padding: 1rem;color: var(--main-text-color);
+}
+nav a:hover {background-color: var(--hover-bg-color);color: var(--hover-color);border-radius: 1rem;padding: 1rem;}
+.active {
+    text-decoration: underline;text-decoration-color: var(--comment-color);
+}
+.welcome-img {width: 100%;height: auto;}
+.welcome-section {display: grid;grid-template-columns: 1fr 2fr 1fr;grid-template-rows: 40% 40% 20%;}
+picture {grid-column: 1/4;grid-row: 1/4;}
+.welcome-msg {grid-column: 3/4;grid-row: 1/2;text-align: center;}
+.button-box-enrol {grid-row: 3/4;grid-column: 2/3;align-self: flex-end;padding: 1rem;font-size: 1.5rem;text-decoration: none;background-color: rgb(187,159,6,0.7);color: var(--main-text-color);width: 200px;margin: 0 auto;margin-bottom: 5px;text-align: center;border-radius: 5px;}
+.button-box-enrol:hover {background-color: var(--hover-bg-color);color: var(--hover-color);}
+.side-section {display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: 1fr 10% auto;padding: 1rem;}
+.side-section-p {grid-row: 1/2;grid-column: 1/3;margin-bottom: 1rem;text-align: justify;font-size: 1.5rem;}
+.button-box-enrol1, .button-box-enrol2 {align-self: center;justify-self: center;font-size: 1.5rem;text-decoration: none;color: var(--main-text-color);background-color: var(--main-bg-color);padding: 1rem;border-radius: 5px;}
+.button-box-enrol1:hover, .button-box-enrol2:hover {background-color: var(--hover-bg-color);color: var(--hover-color);}
+.side-msg-two {grid-column: 1/3;text-align: center;}
+
+.comments-headline {padding: 1rem;font-size: 1.5rem;margin-top: 1rem;text-align: center;}
+.comments {padding: 0 1rem 1rem 1rem;display: flex;gap: 1rem;}
+.comments p {
+    background-color: var(--main-bg-color);padding: 1rem;border-radius: 1rem;
+}
+.comments p span {
+    font-style: italic;color: var(--hover-bg-color);
+}
+.flag-icon-lt {padding-right: 10px;}
+.flag-icon-rt {padding-left: 10px;padding-right: 10px;}
+footer {display: grid;grid-template-columns: 1fr 1fr;background-color: var(--main-bg-color);}
+.social, .non-social {display: flex;justify-content: space-around;align-self: center;}
+.social img {width: 100%;height: auto;}
+.non-social a {text-decoration: none;color: var(--main-text-color);}
+.non-social a:hover {text-decoration: underline;}
+.social img:hover {opacity: 0.5;}
+.non-social {
+    margin-left: 1rem;
+}
+.weather-grid {
+    display: grid;grid-template-columns: 1fr 1fr;justify-items: center;max-width: 600px;width: 100%;margin: 0 auto;margin-bottom: 1rem;gap: 10px;
+}
+.w-section{
+    display: grid;grid-template-columns: 1fr 1fr;align-items: center;justify-items: center;background-color: var(--main-bg-color);border-radius: 0 0 1rem 1rem;
+}
+.grid-section-w div {
+    background-color: var(--hover-bg-color);width: 100%;color: var(--hover-color);padding-bottom: 1rem;padding-top: 1rem;text-align: center;border-radius: 1rem 1rem 0 0;
+}
+.grid-section-f {
+    border-radius: 1rem;
+}
+.weather-details {
+    margin-left: 1rem;
+}
+.grid-section-f div {
+    background-color: var(--hover-bg-color);color: var(--hover-color);width: 100%;padding: 1rem 0 1rem 0;text-align: center;border-radius: 1rem 1rem 0 0;
+}
+.grid-section-f {
+    background-color: var(--main-bg-color);
+}
+.forecast {
+    margin: 0 1rem 0 1rem;
+}
+.forecast p span {
+    font-weight: bold;
+}
+footer {
+    position: relative;bottom: -11rem;
+}
+
+
+/**ABOUT**/
+
+.about-p, .about-section-three {font-size: 1.5rem;}
+figcaption {text-align: center;}
+.caption-two {padding-bottom: 1rem;}
+.about-section h1 {text-align: center;padding: 1rem;font-size: 4rem;}
+.about-p {text-align: justify;padding: 0 1rem 0 1rem;}
+.about-sec-p {padding: 0 1rem 1rem 1rem;}
+.about-motto {font-size: 1.5rem;font-weight: bolder;text-align: center;padding-bottom: 1rem;}
+.about-img {display: grid;justify-items: center;grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 1fr 1fr;align-items: center;}
+.about-img img {width: 100%;height: auto;}
+figcaption span {
+    font-size: larger;font-weight: bold;
+}
+
+.about-img .first img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.first:hover img {
+  opacity: 0.3;
+}
+.first:hover .middle {
+  opacity: 1;
+}
+hr {border: 2px solid;margin: 1rem;}
+.about-section {display: flex;justify-content: space-around;align-items: center;padding-top: 1rem;}
+.first {grid-row: 1/2;grid-column: 2/3;position: relative;}
+.sec {grid-row: 2/3;grid-column: 1/2;}
+.third {grid-row: 2/3;grid-column: 2/3;}
+.fourth {grid-row: 2/3;grid-column: 3/4;}
+.courses-menu {
+    text-align: center;max-width: 300px;margin: 0 auto;border-radius: 1rem;
+}
+.courses h2 {
+    text-align: center;
+}
+.courses-menu a {
+    padding: 1rem;border: 3px solid var(--comment-color);border-radius: 1rem;text-decoration: none;
+}
+.courses-menu a:hover {
+    background-color: var(--hover-bg-color);color: var(--hover-color);
+}
+.line-sep {
+    max-width: 300px;margin: 0 auto;margin-top: 1.5rem;
+}
+.courses-section {
+    display: grid;grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));max-width: 50%;margin: 0 auto;margin-top: 1rem;gap: 1rem;text-align: center;
+}
+.courses-section section button {
+    margin-bottom: 0.5rem;
+}
+.courses-section section button:hover {
+    background-color: var(--hover-bg-color);color: var(--hover-color);
+}
+.courses-section section:hover {
+    animation: 0.5s infinite slidein;
+}
+@keyframes slidein {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+.indi::before {
+    content: "🔮 ";
+    font-size: 24px;
+    color: white;
+}
+.indiTwo::before {
+    content: "🔧 ";
+}
+.indiThree::before {
+    content: "⭐ ";
+}
+.course-span {
+    color: var(--comment-color);
+}
+.dialog-box p {
+    text-align: left;display: block;max-width: 700px;margin: 0 auto;
+}
+.dialog-box {
+    max-width: 300px;background-color: var(--hover-bg-color);color: var(--hover-color);border: 3px solid var(--main-bg-color);border-radius: 1rem;
+}
+.title-span {
+    text-decoration: underline;text-decoration-color: var(--main-bg-color);text-decoration-thickness: 3px;
+}
+
+/**Contact Us**/
+.contact-heading {
+    text-align: center;
+}
+.container-j {
+    display: grid;grid-template-columns: 1fr auto;align-items: center;justify-items: center;margin: 1rem;
+}
+.levels-section aside {
+    border: 1px solid blue;padding: 1rem;margin: 1rem;border-radius: 1rem 0 1rem 0;
+}
+form {
+    border: 2px solid blue;padding: 1rem;border-radius: 1rem;background-color: var(--main-bg-color);
+}
+.form-section {
+    text-align: unset;padding: unset;padding-left: 1rem;justify-self: unset;
+}
+form label {
+    display: block;padding-right: 0.5rem;font-size: 20px;font-weight: bold;
+}
+.join, .enquire, .nigerian, .non-nigerian, .enrol, .fees, .courses, .others{
+    font-weight: unset;
+}
+#join, #enquire, #nigerian, #non-nigerian {
+    margin-right: 1rem;height: 20px;width: 20px;margin-bottom: 0.5rem;
+}
+.resumption-one, .resumption-two, .resumption-three, .resumption-four, .gender-m, .gender-f {
+    font-weight: unset;
+}
+#resumption-one, #resumption-two, #resumption-three, #resumption-four, #male, #female, #enrol, #fees, #others, #courses {
+    height: 20px;width: 20px;margin-right: 1rem;margin-bottom: 0.5rem;
+}
+form input[type='text'] {
+    display: block;width: 100%;font-size: 20px;
+}
+form input[type='date'] {
+    display: block;font-size: 20px;
+}
+form input[type="email"], form input[type="tel"] {
+    display: block;width: 100%;font-size: 20px;
+}
+form input[type="submit"] {
+    display: block;width: 100%;padding: 1rem;font-size: 1.5rem;border-radius: 1rem;box-shadow: 2px 2px blue;
+}
+form input[type="submit"]:hover {
+    background-color: black;color: white;
+}
+.submitbtn {
+    margin-left: 1rem;padding-right: 0;margin-right: 1rem;
+}
+form textarea {
+    display: block;width: 100%;font-size: 20px;
+}
+form legend {
+    font-weight: bolder;font-size: 1.5rem;background-color: var(--main-bg-color);padding: 0.5rem;border-radius: 1rem;
+}
+form fieldset {
+    margin: 1rem;border-radius: 1rem;background-color: lightblue;
+}
+form ul li {
+    list-style-type: none;
+}
+form ul {
+    margin: 0;padding: 0;
+}
+.radio-par {
+    font-size: 20px;font-weight: bold;margin-bottom: 0;
+}
+form h2 {
+    text-align: center;font-size: 2rem;
+}
+.interest, .gender-p, .nationality-p, .select-p, .enquiry-q {
+    font-size: 20px;font-weight: bold;margin-bottom: 0;
+}
+.display, .display-enquiry, .radio-par {
+    display: none;
+}
+.display.active, .radio-par.active {
+    display: block;text-decoration: none;
+}
+.display-enquiry.active {
+    display: block;text-decoration: none;
+}
+.display-state, .select-p, .display-country, .enquiry-q, .display-q {
+    display: none;
+}
+.display-state.active, .select-p.active, .display-country.active, .display-q.active, .enquiry-q.active {
+    display: block;text-decoration: none;
+}
+.contact-img {
+    width: 100%;height: auto;
+}
+.contact-msg {
+    text-align: center;
+}
+.about-para {
+    display: block;max-width: 600px;margin: 0 auto;font-size: larger;
+}
+
+/**Confirmation page*/
+.thankyou-heading {
+    text-align: center;
+}
+.form-result, .form-interest {
+    max-width: 600px;margin: 0 auto;
+}
+.form-result {
+    background-color: var(--main-bg-color);padding: 1rem;border: 3px solid var(--hover-bg-color);border-radius: 1rem;height: 400px;
+}
+.form-result h2 {
+    text-align: center;
+}
+.form-result p {
+    font-size: 1.2rem;
+}
+.form-result p a {
+    background-color: var(--hover-color);padding: 0.1rem;
+}
+.form-interest {
+    background-color: var(--hover-bg-color);color: var(--hover-color);padding: 1rem;margin-top: 1rem;border: 3px solid var(--main-bg-color);border-radius: 1rem;height: 200px;
+}
+.lastvisited-section {
+    border: 3px solid var(--comment-color);text-align: center;margin: 1rem;border-radius: 1rem;background-color: var(--hover-bg-color);color: var(--hover-color);
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        display: block;
+    }
+    #menu {display: block; font-size: 2.5rem;border: 2px solid;background: none;color: black;position: absolute;right: 1rem;top: 1.5rem;}
+    #menu:hover {border: 2px solid var(--comment-color);}
+    #menu::before {content: "☰";}
+    #menu.show::before {content: "X";}
+    #menu.show::before:hover {
+        border: 2px solid var(--comment-color);
+    }
+    .show a {display: block;}
+    
+    nav a {display: none;}
+    
+    .show a {display: block;padding: 1rem;}
+    nav {
+        flex-direction: column;width: 100%;
+    }
+    .welcome-msg {
+        display: none;
+    }
+    .side, .weather-grid{
+        display: block;
+    }
+    .comments {
+        flex-direction: column;
+    }
+    .grid-section-w {
+        margin: 0 1rem 1rem 1rem;
+    }
+    .grid-section-f {
+        margin: 0 1rem 0 1rem;text-align: center;padding-bottom: 0.5rem;
+    }
+    .social, .non-social {
+        flex-direction: column;
+    }
+    .social {
+        justify-self: right;margin-right: 1rem;margin-top: 1rem;margin-bottom: 1rem;
+    }
+    .social img {
+        width: unset;
+    }
+    #logo_link {
+        float: left;
+    }
+    
+  
+  /**ABOUT**/
+  .left, .right {display: none;}
+  .about-img {
+    display: block;max-width: 310px;margin: 0 auto;
+  }
+
+  .about-para {
+    padding: 1rem;
+  }
+  .form-interest, .form-result {
+    margin: 0 1rem 0 1rem;
+  }
+  .form-interest {
+    margin-top: 1rem;
+  }
+}

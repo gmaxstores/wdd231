@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BMS Online Institute</title>
+    <meta name="author" content="Maxwell Balla Nvani">
+    <meta name="description" content="This site aims to provide information about BMS online Institute, how to enrol as well as contact address">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Contact Us">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Reach out to us today">
+    <meta property="og:image" content="https://gmaxstores.github.io/wdd231/project/images/contactus_large.webp">
+    <meta property="og:url" content="https://gmaxstores.github.io/wdd231/project/contact.html">
+    <meta property="twitter:card" content="Reach out to us today">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/bms.css">
+    <script src="scripts/contact.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/bmslogo.webp" alt="BMS online institute Logo" width="200" height="100">
+            </a>
+            <button id="menu" aria-label="menu button"></button>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="active" href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <div class="contact-welcome">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/contactus_large.webp">
+                    <source media="(min-width: 500px)" srcset="images/contactus_medium.webp">
+                    <img
+                    class="contact-img"
+                    src="images/contactus_small.webp"
+                    alt="search picture"
+                    width="400"
+                    height="200"
+                    >
+                </picture>
+                <h1 class="contact-msg">REACH OUT TO US TODAY</h1>
+            </div>
+            <hr>
+            <p class="about-para">
+                You can reach us via any of the following means: <br>Email: bmsonlineinstitute&commat;gmail&period;com <br>
+                Phone Number: 07064852404, 08110895912, 09162296367
+            </p>
+            <div class="container-j">
+                <section class="form-section">
+                    <form action="confirmation.html" method="get" class="form-container">
+                        <h2>Enquiry/Join Form</h2>
+                        <fieldset>
+                            <legend>Biodata</legend>
+                            <p>Required fields are marked with an asterics (<span aria-label="required">*</span>)</p>
+                            <p>
+                                <label for="firstname"><span aria-label="required">*</span> First Name:
+                                    <input type="text" id="firstname" name="firstname" title="Your First Name" autocomplete="given-name" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="lastname"><span aria-label="required">*</span> Last Name:
+                                    <input type="text" id="lastname" name="lastname" title="Your Last Name" autocomplete="family-name" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="email"><span aria-label="required">*</span> Email Address:
+                                    <input type="email" name="email" id="email" title="Your Email address e.g johndoe@xyc.com" autocomplete="email" placeholder="johndoe@xyz.com" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="telephone"><span aria-label="required">*</span> Mobile Phone Number:
+                                    <input type="tel" name="telephone" id="telephone" title="Your Phone number" autocomplete="tel" required>
+                                </label>
+                            </p>
+                            <p class="gender-p">
+                                <span aria-label="required">* </span>Gender
+                            </p>
+                            <ul>
+                                <li>
+                                    <label for="male" class="gender-m">
+                                        <input type="radio" name="gender" id="male" value="1" required>Male
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="female" class="gender-f">
+                                        <input type="radio" name="gender" id="female" value="2" required>Female
+                                    </label>
+                                </li>
+                            </ul>
+                            <p class="nationality-p">
+                                <span aria-label="required">* </span>Nationality
+                            </p>
+                            <ul>
+                                <li>
+                                    <label for="nigerian" class="nigerian">
+                                        <input type="radio" name="nationality" id="nigerian" value="1" required>Nigerian
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="non-nigerian" class="non-nigerian">
+                                        <input type="radio" name="nationality" id="non-nigerian" value="2" required>Non-Nigerian
+                                    </label>
+                                </li>
+                            </ul>
+                            <p class="display-country">
+                                <label for="country"><span aria-label="required">* </span>Country of Origin
+                                    <input type="text" name="country" id="country" title="country" autofocus>
+                                </label>
+                            </p>
+                            <p class="select-p"><span aria-label="required">* </span>State of Origin</p>
+                            <ul class="display-state">
+                                <li>
+                                    <label for="select">
+                                        <select name="state" id="select">
+                                            <option value="" disabled selected>Please select your state</option>
+                                        </select>
+                                    </label>
+                                </li>
+                            </ul>
+                            <p>
+                                <label for="birth"><span aria-label="required">* </span>Date of Birth
+                                    <input type="date" name="birth" id="birth" required>
+                                </label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Interest</legend>
+                            <p class="interest"><span aria-label="required">* </span>Are You joining us today or enquiring about something?</p>
+                            <ul>
+                                <li>
+                                    <label for="join" class="join">
+                                        <input type="radio" name="interest" id="join" value="1" required>Join
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="enquire" class="enquire">
+                                        <input type="radio" name="interest" id="enquire" value="2" required>Enquire
+                                    </label>
+                                </li>
+                            </ul>
+                            <p class="display">
+                                <label for="gtitle"> Guardian's Title:
+                                    <input type="text" id="gtitle" name="title" title="Minimum of 7 characters inluding only alpha characters, hyphens and spaces" autocomplete="organization-title" pattern="[a-zA-Z\s\-]*" minlength="2">
+                                </label>
+                            </p>
+                            <p class="display">
+                                <label for="gname"><span aria-label="required">*</span> Guardian's Full Name:
+                                    <input type="text" id="gname" name="guardian" title="Guardian" autocomplete="organization">
+                                </label>
+                            </p>
+                            <p class="radio-par"><span aria-label="required">* </span>When would you like to resume?</p>
+                            <ul class="display">
+                                <li>
+                                    <label for="resumption-one" class="resumption-one">
+                                        <input type="radio" name="resumption" id="resumption-one" value="1">
+                                        Immediately
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="resumption-two" class="resumption-two">
+                                        <input type="radio" name="resumption" id="resumption-two" value="2">
+                                        Soon
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="resumption-three" class="resumption-three">
+                                        <input type="radio" name="resumption" id="resumption-three" value="3">
+                                        Next Session
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="resumption-four" class="resumption-four">
+                                        <input type="radio" name="resumption" id="resumption-four" value="4">
+                                        Later
+                                    </label>
+                                </li>
+                            </ul>
+                            <p class="enquiry-q">What would you like to enquire about?</p>
+                            <ul class="display-q">
+                                <li>
+                                    <label for="fees" class="fees">
+                                        <input type="checkbox" name="fees" id="fees" value="1">
+                                        Fees
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="enrol" class="enrol">
+                                        <input type="checkbox" name="enrol" id="enrol" value="2">
+                                        Enrollment
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="courses" class="courses">
+                                        <input type="checkbox" name="courses" id="courses" value="3">
+                                        Courses Offered
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="others" class="others">
+                                        <input type="checkbox" name="others" id="others" value="4">
+                                        Others
+                                    </label>
+                                </li>
+                            </ul>
+                            <p class="display-enquiry">
+                                <label for="enquiry-description">Enquiry Description:
+                                    <textarea name="description" id="enquiry-description" title="Description of your Enquiry"></textarea>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="hidden" name="timestamp" id="timestamp" value="1">
+                                </label>
+                            </p>
+                        </fieldset>
+                        <label class="submitbtn" for="submit-btn">
+                            <input type="submit" value="Enquire/Join" id="submit-btn">
+                        </label>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="non-social">
+                <p><a href="about.html">About</a></p>
+                <p><a href="contactus.html">Contact Us</a></p>
+                <p class="flag">
+                    <img class="flag-icon-lt" src="images/nigeria.webp" alt="nigeria flag icon"> Nigeria <img class="flag-icon-rt" src="images/nigeria.webp" alt="nigeria flag icon"><br>(Flag icon designed by Freepik from Flaticon)
+                </p>
+                <p class="name">BMS Online Institute &copy;<span id="currentyear"></span></p>
+                <p id="lastModified">
+                    
+                </p>
+            </div>
+            <div class="social">
+                <a href="http://facebook.com" target="_blank">
+                    <img src="images/facebooklogo.webp" alt="fb icon">
+                </a>
+                <a href="http://twitter.com" target="_blank">
+                    <img src="images/youtubelogo.webp" alt="twitter icon">
+                </a>
+                <a href="http://instagram.com" target="_blank">
+                    <img src="images/instgramlogo.webp" alt="instagram icon">
+                </a>
+                <a href="http://linkedin.com" target="_blank">
+                    <img src="images/linkedinlogo.webp" alt="linkedin icon">
+                </a>
+                <a href="http://whatsapp.com" target="_blank">
+                    <img src="images/whatsapplogo.webp" alt="whatsapp icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
